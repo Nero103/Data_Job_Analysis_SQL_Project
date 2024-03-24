@@ -6,7 +6,7 @@ If you want to see the SQL queries, take a look here: [project_sql folder](/proj
 # Background
 Curious to see and understand in-demand skills in the data analyst job market, both nationally and in Michigan, to create an effective job search strategy, this project was created to identify demanded skills and top-salaries, which will help job seekers build a strategy toward optimal jobs.
 
-Origins of the data for this project comes from Luke Barousse's [SQL Course](https://lukenarousse.com/sql).
+Origins of the data for this project comes from Luke Barousse's [SQL Course](https://lukebarousse.com/sql).
 
 ### Questions that I wanted to answer via SQL queries within the project:
 
