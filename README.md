@@ -1,35 +1,35 @@
 # Introduction
-Focusing on data and data analyst roles, then lets take a deep look into the job market. This project explores jobs with top-salaries, in-demand skills, and where high skill demand meets high salries.
+Focusing on data and data analyst roles, then let's take a deep look into the job market. This project explores jobs with top salaries, in-demand skills, and where high skill demand meets high salaries.
 
 If you want to see the SQL queries, take a look here: [project_sql folder](/project_sql/)
 
 # Background
-Curious to see and understand in-demand skills in the data analyst job market, both nationally and in Michigan, to create an effective job search strategy, this project was created to identify demanded skills and top-salaries, which will help job seekers build a strategy toward optimal jobs.
+Curious to see and understand in-demand skills in the data analyst job market, both nationally and in Michigan, to create an effective job search strategy, this project was created to identify demanded skills and top salaries, which will help job seekers build a strategy toward optimal jobs.
 
-Origins of the data for this project comes from Luke Barousse's [SQL Course](https://lukebarousse.com/sql).
+The origin of the data for this project comes from Luke Barousse's [SQL Course](https://lukebarousse.com/sql).
 
 ### Questions that I wanted to answer via SQL queries within the project:
 
 1. What are the top-paying data analyst jobs?
-2. What skills are required for these top paying jobs on a national and state of Michigan level?
+2. What skills are required for these top-paying jobs on a national and state of Michigan level?
 3. What skills are most in demand for data analysts?
 4. What skills are connected to high-end salaries on a national level and in Michigan?
 5. What are the most optimal skills to learn overall and in Michigan?
 
 # Tools
-With a number of key tools, I leapt into the data analyst job market, wielding the power of the following:
+With several key tools, I leaped into the data analyst job market, wielding the power of the following:
 
-- **SQL**: As the backbone of this project, I used it for analysis, allowing me to query the database to unveil meaning ful insights.
-- **PostgeSQL**: This was the database management system
- used for its efficient organization and managment of job posting data.
- - **Visual Studio Code**: my integrated development environment (IDE) used for database management andrunning SQL queries.
+- **SQL**: As the backbone of this project, I used it for analysis, allowing me to query the database to unveil meaningful insights.
+- **PostgreSQL**: This was the database management system
+ used for its efficient organization and management of job posting data.
+ - **Visual Studio Code**: my integrated development environment (IDE) used for database management and running SQL queries.
  - **Git and GitHub**: Used for its robust version control and for sharing my SQL scripts.
 
 # The Method/Analysis
 Geared toward investigating the data analyst job market in this project, here is how I approached each question by using queries:
 
 ### 1. High-end Salary for Data Analyst Jobs
-To uncover the highest paying roles, I filtered for data analyst roles by yearly avearge salary and job location, focusing on remote jobs or Michigan jobs. This query shows high salary opportunities in the field.
+To uncover the highest paying roles, I filtered for data analyst roles by yearly average salary and job location, focusing on remote jobs or Michigan jobs. This query shows high salary opportunities in the field.
 
 ```sql
 SELECT
@@ -53,7 +53,7 @@ ORDER BY
 LIMIT 10;
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 The companies are ranked from highest to lowest average salary.
 **AT&T** appears at the top, suggesting it offers the most competitive salary for Data Analyst roles among the companies listed.
@@ -65,7 +65,7 @@ The chart provides a quick comparison of salary ranges among leading companies, 
 
 ### 2a. Top Data Analyst Job Skills (remote)
 
-To uncover skills needed for top paying data analyst jobs, I identified the 10 highest salries from remote jobs.
+To uncover skills needed for top-paying data analyst jobs, I identified the 10 highest salaries from remote jobs.
 
 ```sql
 WITH top_paying_jobs AS (
@@ -100,9 +100,9 @@ FROM
 ORDER BY
     tpj.salary_year_avg DESC;
 ```
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
-**SQL is the most in-demand skill**, showing up in 8 job listings. This emphasizes the importance of database management and querying skills in the data analyst field.
+**SQL is the most in-demand skill**, showing up in 8 job listings. This emphasizes the importance of database management and querying skills in the data analysis field.
 
 **Python follows closely**, featured in 7 job listings. Its versatility for data manipulation, analysis, and machine learning makes it a crucial skill.
 
@@ -115,7 +115,7 @@ Here is are the detail insights from the queries result-set.
 
 ### 2b. Top Data Job Skills (Michigan)
 
-To uncover skills needed for top paying data jobs, I idnetified the 10 highest salries from Michigan jobs and filter for Data and Intelligence jobs in general due to low row count in result-set.
+To uncover skills needed for top-paying data jobs, I identified the 10 highest salaries from Michigan jobs and filtered for Data and Intelligence jobs in general due to low row count in result-set.
 
 ```sql
 WITH top_paying_jobs_mi AS (
@@ -151,7 +151,7 @@ ORDER BY
     tpjm.salary_year_avg DESC;
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **Python appears to be the most in-demand skill**, with 12 occurrences across the dataset.
 
@@ -165,7 +165,7 @@ Here is are the detail insights from the queries result-set.
 *This is a bar graph visualizing the most in-demand skills by salary for data analyst jobs in Michigan. ChatGPT generated this graph from my SQL query results*
 
 ### 3a. Top Skills Most In-Demand Overall
-To uncover the most in-demand skills needed for in data analyst roles, regardless of salary, I needed to focuse on all job postings filtered on Michigan to idnetify the 5 skills.
+To uncover the most in-demand skills needed for data analyst roles, regardless of salary, I needed to focus on all job postings filtered in Michigan to identify the 5 skills.
 
 ```sql
 SELECT
@@ -186,11 +186,11 @@ ORDER BY
 LIMIT 5
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **SQL, Excel, and Python lead the list**. This suggests a broad need across industries for data manipulation, analysis, and programming capabilities. 📊🐍
 
-**Tableau and Power BI indicates the significant value placed on data visualization** skills. These tools are essential for transforming data into actionable insights. 📈
+**Tableau and Power BI indicate the significant value placed on data visualization** skills. These tools are essential for transforming data into actionable insights. 📈
 
 **SQL as a Keystone Skill** shows its prominent position, with the highest number of mentions, highlights its status as a keystone skill for data professionals, reinforcing its critical role in data querying and management
 
@@ -204,7 +204,7 @@ Here is are the detail insights from the queries result-set.
 *Table of in-demand skills for Data Analyst jobs overall*
 
 ### 3b. Top Skills Most In-Demand in Michigan
-To uncover the most in-demand skills needed for in data analyst roles in Michigan, regardless of salary, I needed to focuse on all job postings filtered on Michigan to idnetify the 5 skills.
+To uncover the most in-demand skills needed for data analyst roles in Michigan, regardless of salary, I needed to focus on all job postings filtered in Michigan to identify the 5 skills.
 
 ```sql
 SELECT
@@ -226,7 +226,7 @@ ORDER BY
 LIMIT 5
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **SQL and Excel top the list**, indicating a strong demand for skills in data manipulation, analysis, and reporting. 📊
 
@@ -244,7 +244,7 @@ Here is are the detail insights from the queries result-set.
 *Table of in-demand skills for Data Analyst jobs in Michigan*
 
 ### 4a. Top Paying Skills for Remote
-To uncover the most in-demand skills needed for in data analyst remote roles, I needed to filter for renote roles and calculate the average yearly salary on all job postings.
+To uncover the most in-demand skills needed for data analyst remote roles, I needed to filter for remote roles and calculate the average yearly salary on all job postings.
 
 ```sql
 SELECT
@@ -267,7 +267,7 @@ ORDER BY
 LIMIT 30
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **Cloud Computing and Big Data, and Data Science and Machine Learning categories** are prominently featured for high demand and high salary skills, showcasing the industry's emphasis on big data processing, analytics, and AI technologies.
 
@@ -277,10 +277,10 @@ Here is are the detail insights from the queries result-set.
 Databases and Data Management skills underline the importance of managing, processing, and analyzing large datasets, indicating a broad need across industries for professionals who can handle complex data environments.
 
 ![Top In-Demand Skills by Salary](assets\Top_Skills_Demanded_By_Salary_Overall.png)
-*This is bar graph visualizing to most in demand skills by highest salary. ChatGPT generated this graph from my SQL query results*
+*This is a bar graph visualizing to most in-demand skills by highest salary. ChatGPT generated this graph from my SQL query results*
 
 ### 4b. Top Paying Skills in Michigan
-To uncover the most in-demand skills needed for in data analyst roles, I needed to filter for Michigan and Data roles in general due to low row count in result-set and calculate the average yearly salary on all job postings.
+To uncover the most in-demand skills needed for data analyst roles, I needed to filter for Michigan and Data roles in general due to the low row count in result-set and calculate the average yearly salary on all job postings.
 
 ```sql
 SELECT
@@ -303,7 +303,7 @@ ORDER BY
 LIMIT 30
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **Splunk** skills lead with an average salary of $169,000.
 
@@ -311,13 +311,13 @@ Here is are the detail insights from the queries result-set.
 
 **Technologies like AWS, GitLab, and Kubernetes** offer competitive salaries ranging from $127,333 to $129,496.
 
-**Linux, Snowflake, Airflow, and Matlab** are still notably high, though at the low-end, around $115,000.
+**Linux, Snowflake, Airflow, and Matlab** are still notably high, though at the low end, around $115,000.
 
 ![Top In-Demand Skills by Salary MI](assets\Top_Skills_Demanded_By_Salary_MI.png)
-*This is bar graph visualizing to most in demand skills by highest salary in MI. ChatGPT generated this graph from my SQL query results*
+*This is a bar graph visualizing to most in-demand skills by the highest salary in MI. ChatGPT generated this graph from my SQL query results*
 
 ### 5a. Top Most Optimal Skills for Remote
-To uncover the most optimal skills for high paying data analyst remote roles, I joined tables to query off of, filtered on Data Analyst and Remote roles, and filtered on demand skill greater than 10. 
+To uncover the most optimal skills for high-paying data analyst remote roles, I joined tables to query off of, filtered on Data Analyst and Remote roles, and filtered on demanded skills greater than 10. 
 
 ```sql
 SELECT
@@ -345,7 +345,7 @@ ORDER BY
 LIMIT 30
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **High Demand for Cloud and Big Data**: Skills related to cloud services (e.g., AWS, Azure) and big data technologies (e.g., Hadoop, BigQuery) are in the top 10, highlighting the high demand and lucrative opportunities in cloud computing and big data fields.
 
@@ -371,7 +371,7 @@ Here is are the detail insights from the queries result-set.
 *Table of optimal skills for Data Analyst remote jobs*
 
 ### 5b. Top Most Optimal Skills in Michigan
-To uncover the most optimal skills for high paying data analyst roles in Michigan, I joined tables to query off of, filtered on Data roles in general within Michigan due to low row count int result-set roles, and filtered on demand skill greater than 10. 
+To uncover the most optimal skills for high-paying data analyst roles in Michigan, I joined tables to query off of, filtered on Data roles in general within Michigan due to low row count in result-set roles, and filtered on demanded skills greater than 10. 
 
 ```sql
 SELECT
@@ -399,7 +399,7 @@ ORDER BY
 LIMIT 10
 ```
 
-Here is are the detail insights from the queries result-set.
+Here are the detailed insights from the query result-set.
 
 **Cloud and Data Analytics Focus**: AWS tops the list at $129,496.48, showing a premium for cloud expertise. Other skills include data analytics (R, Python, Spark) and database management (SQL).
 
@@ -425,33 +425,33 @@ Here is are the detail insights from the queries result-set.
 # Conclusion
 ### Insights
 
-1. **High-end Salary for Data Analyst Jobs**: It appears that AT&T provides top paying salary, suggesting it offers a competitive salary for likely a high ranked Data Analyst role of over $250,000 among the companies listed.
+1. **High-end Salary for Data Analyst Jobs**: It appears that AT&T provides top paying salary, suggesting it offers a competitive salary for likely a high-ranked Data Analyst role of over $250,000 among the companies listed.
 2. **Top Data Analyst Job Skills by Salary**
-    - **Remote**: Among the tools a data analyst would use, SQL is most in-demand in job listings for data analysts, emphasing its imprtance. Tools such as Python** and Tableau follow, underscoring the value of data visualization with Excel and Snowflake highlighting a mix of statistical programming, cloud computing, and data manipulation.
-    - **Michigan**: In Michigan, Python leads the count for in-demand skills with SQL following closely behind. R, Java, and Amazon Web Services, seem popular as well.
+    - **Remote**: Among the tools a data analyst would use, SQL is most in-demand in job listings for data analysts, emphasizing its importance. Tools such as Python** and Tableau follow, underscoring the value of data visualization with Excel and Snowflake highlighting a mix of statistical programming, cloud computing, and data manipulation.
+    - **Michigan**: In Michigan, Python leads the count for in-demand skills with SQL following closely behind. R, Java, and Amazon Web Services seem popular as well.
 3. **Top Skills Most In-Demand**
-    - **Remote**: It appears thar SQL, Excel, and Python top the list, suggesting a need across industries for data manipulation, analysis, and programming capabilities. Meanwhile, Tableau and Power BI indicate they are the top data visualization skills desired. These tools are essential for transforming data into actionable insights. However, SQL is the a keystone skill to have.
+    - **Remote**: It appears that SQL, Excel, and Python top the list, suggesting a need across industries for data manipulation, analysis, and programming capabilities. Meanwhile, Tableau and Power BI indicate they are the top data visualization skills desired. These tools are essential for transforming data into actionable insights. However, SQL is the keystone skill to have.
     - **Michigan**: Much like remote roles for data analysis, SQL and Excel are highly desired. With SAP and Power BI present, these two skills highlight the need for tools used in business processes and data visualization, Lastly, Python emphasizes the growing importance of programming skills and automation.
 4.  **Top Paying Skills for Remote**
-    - **Remote**: For the remote data analyst skills for high=end salries, cloud computing and Big Data along with Data Science and Machine Learning categories are high salary skills, making up over $100,000. DevOps and collaboration tools are also realatively high paying skills along with **Programming Languages and Frameworks from system programming to mobile app development. Databases and Data Management skills show industry need to handle complex data.
-    - **Michigan**: In Michigan, having Splunk skills for Data roles suggest a high average salary over $160,000 while Go, C, VBA, and PHP** can potentially garner a salary around $140,000. AWS, GitLab, and Kubernetes** offer competitive salaries ranging from $120,00 to $129,00 and **Linux, Snowflake, Airflow, and Matlab skills can fetch around $115,000.
+    - **Remote**: For the remote data analyst skills for high-end salaries, cloud computing and Big Data along with Data Science and Machine Learning categories are high salary skills, making up over $100,000. DevOps and collaboration tools are also relatively high-paying skills along with **Programming Languages and Frameworks from system programming to mobile app development. Databases and Data Management skills show the industry's need to handle complex data.
+    - **Michigan**: In Michigan, having Splunk skills for Data roles suggests a high average salary of over $160,000 while Go, C, VBA, and PHP** can potentially garner a salary of around $140,000. AWS, GitLab, and Kubernetes** offer competitive salaries ranging from $120,00 to $129,00 and **Linux, Snowflake, Airflow, and Matlab skills can fetch around $115,000.
 5. **Top Most Optimal Skills**
-    - **Remote**: For remote data analyst jobs, skills such as Go and Snowflake, the former garnering an average salary of approximately $115,000 indicate that specialized skills can garner top salaries. AWS, Azure, and big data technologies (e.g., Hadoop and BigQuery) seem to be the most optimal skills for being in-demand and havong a high salary.
-    - **Michigan**: For Michigan, AWS appears again as a  top skill to know with an average salary around $130,000. Skills such as SQL, whihc pull in around $105,000, along with R, Python, Java, and Spark are also optimal skills to know for data jobs in high salary ranges.
+    - **Remote**: For remote data analyst jobs, skills such as Go and Snowflake, the former garnering an average salary of approximately $115,000 indicate that specialized skills can garner top salaries. AWS, Azure, and big data technologies (e.g., Hadoop and BigQuery) seem to be the most optimal skills for being in demand and having a high salary.
+    - **Michigan**: For Michigan, AWS appears again as a  top skill to know with an average salary of around $130,000. Skills such as SQL, which pulls in around $105,000, along with R, Python, Java, and Spark are also optimal skills to know for data jobs in high salary ranges.
 
 # Discussion
 
 ### What I learned
 
-After taking this journey, I have leveled-up my SQL skillset with some versitile tools
+After taking this journey, I have leveled up my SQL skillset with some versatile tools
 
 - **Data Aggregation**: Got comfortable with GROUP BY and aggregate functions such as AVG() and COUNT() to summarize data for reporting.
 
-- **Complex Querying**: Used advanced SQL and steathily merged tables, built common table expreesions (CTEs), and optimized query performance by modifying scripts.
+- **Complex Querying**: Used advanced SQL and stealthily merged tables, built common table expressions (CTEs), and optimized query performance by modifying scripts.
 
-- **Analytical Mastermind**: Developed my real-world problem-solvong skills, translating questions into meaningfual and actionable insights like a decoder, and I debugged script errors with rapid succession.
+- **Analytical Mastermind**: Developed my real-world problem-solving skills, translating questions into meaningful and actionable insights like a decoder, and debugged script errors with rapid succession.
 
 ### Closing Thoughts
 
-This project further developed my SQL skills and enhanced my understanding of the data job market, especially the data analytics job market. Exploring and analyzing this data emphasizes the impotance of continous learning and importance of understanding trends within industries and market environments. By doing this analysis, the project findings serve as a resource for suggesting skill development and job searching. Knowing the most optimal skills can help equip job seekers in the job market with top in-demand skills and high-paying salary skills. 
+This project further developed my SQL skills and enhanced my understanding of the data job market, especially the data analytics job market. Exploring and analyzing this data emphasizes the importance of continuous learning and the importance of understanding trends within industries and market environments. By doing this analysis, the project findings serve as a resource for suggesting skill development and job searching. Knowing the most optimal skills can help equip job seekers in the job market with top in-demand skills and high-paying salary skills. 
 
