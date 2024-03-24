@@ -60,7 +60,7 @@ The companies are ranked from highest to lowest average salary.
 
 The chart provides a quick comparison of salary ranges among leading companies, useful for understanding market standards and identifying employers that value data analysis skills highly.
 
-![Top Paying Companies](assets\Top_10_Companies_by_Average_Salary.png)
+[Top Paying Companies](https://raw.githubusercontent.com/Nero103/assets/main/Top_10_Companies_by_Average_Salary.png)
 *Bar graph visualizing the average salaries for various Data Analyst positions from the top 10 companies. ChatGPT generated this graph from my SQL query results*
 
 ### 2a. Top Data Analyst Job Skills (remote)
