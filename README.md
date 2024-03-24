@@ -60,7 +60,7 @@ The companies are ranked from highest to lowest average salary.
 
 The chart provides a quick comparison of salary ranges among leading companies, useful for understanding market standards and identifying employers that value data analysis skills highly.
 
-![Top Paying Companies](assets\Top_10_Companies_by_Average_Salary.png)
+![Top 10 Companies by Average Salary for Data Analysts](https://github.com/Nero103/Data_Job_Analysis_SQL_Project/assets/92405860/775e4419-25cc-4212-b66a-64e1a3abedd7)
 *Bar graph visualizing the average salaries for various Data Analyst positions from the top 10 companies. ChatGPT generated this graph from my SQL query results*
 
 ### 2a. Top Data Analyst Job Skills (remote)
@@ -110,7 +110,7 @@ Here are the detailed insights from the query result-set.
 
 **Skills like R, AWS, Pandas, Excel, and Snowflake** each appear in 3 job listings, highlighting a mix of statistical programming, cloud computing, data manipulation, spreadsheet proficiency, and cloud data warehousing knowledge as important competencies.
 
-![Top Skills in demand](assets\Top_10_Demanded_Skills.png)
+![Top_10_Demanded_Skills](https://github.com/Nero103/Data_Job_Analysis_SQL_Project/assets/92405860/e5757957-833a-4081-878c-919eeafa74d3)
 *This is a bar graph showing the top skills by highest salary for Data Analyst jobs. ChatGPT generated this graph from my SQL query results*
 
 ### 2b. Top Data Job Skills (Michigan)
@@ -161,7 +161,7 @@ Here are the detailed insights from the query result-set.
 
 **Java, AWS (Amazon Web Services)**, both have 5 mentions.
 
-![Top skills in demand - Michigan](assets\Top_10_Demanded_Skills_Michigan.png)
+![Top_10_Demanded_Skills_Michigan](https://github.com/Nero103/Data_Job_Analysis_SQL_Project/assets/92405860/0dda3dc6-fce6-4315-8b57-5056cd697883)
 *This is a bar graph visualizing the most in-demand skills by salary for data analyst jobs in Michigan. ChatGPT generated this graph from my SQL query results*
 
 ### 3a. Top Skills Most In-Demand Overall
@@ -276,7 +276,7 @@ Here are the detailed insights from the query result-set.
 **Programming Languages and Frameworks** highlight the necessity of versatile programming skills across different applications, from system programming with Linux to mobile app development with Swift.
 Databases and Data Management skills underline the importance of managing, processing, and analyzing large datasets, indicating a broad need across industries for professionals who can handle complex data environments.
 
-![Top In-Demand Skills by Salary](assets\Top_Skills_Demanded_By_Salary_Overall.png)
+![Top_Skills_Demanded_By_Salary_Overall](https://github.com/Nero103/Data_Job_Analysis_SQL_Project/assets/92405860/7b141d0b-8efa-46a1-a44d-f396dff4d54e)
 *This is a bar graph visualizing to most in-demand skills by highest salary. ChatGPT generated this graph from my SQL query results*
 
 ### 4b. Top Paying Skills in Michigan
@@ -313,7 +313,7 @@ Here are the detailed insights from the query result-set.
 
 **Linux, Snowflake, Airflow, and Matlab** are still notably high, though at the low end, around $115,000.
 
-![Top In-Demand Skills by Salary MI](assets\Top_Skills_Demanded_By_Salary_MI.png)
+![Top_Skills_Demanded_By_Salary_MI](https://github.com/Nero103/Data_Job_Analysis_SQL_Project/assets/92405860/d582cabf-bbb7-426a-9f59-4790d6160780)
 *This is a bar graph visualizing to most in-demand skills by the highest salary in MI. ChatGPT generated this graph from my SQL query results*
 
 ### 5a. Top Most Optimal Skills for Remote
