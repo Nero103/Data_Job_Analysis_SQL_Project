@@ -1,12 +1,12 @@
 # Introduction
 Focusing on data and data analyst roles, then let's take a deep look into the job market. This project explores jobs with top salaries, in-demand skills, and where high skill demand meets high salaries.
 
-If you want to see the SQL queries, take a look here: [project_sql folder](/project_sql/)
+If you want to see the SQL queries, take a look here: (https://github.com/Nero103/Data_Job_Analysis_SQL_Project/tree/main/project_sql)
 
 # Background
 Curious to see and understand in-demand skills in the data analyst job market, both nationally and in Michigan, to create an effective job search strategy, this project was created to identify demanded skills and top salaries, which will help job seekers build a strategy toward optimal jobs.
 
-The origin of the data for this project comes from Luke Barousse's [SQL Course](https://lukebarousse.com/sql).
+The origin of the data for this project comes from Luke Barousse's SQL Course: (https://lukebarousse.com/sql).
 
 ### Questions that I wanted to answer via SQL queries within the project:
 
